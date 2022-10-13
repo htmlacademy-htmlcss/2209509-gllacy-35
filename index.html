@@ -30,12 +30,12 @@
           <li class="navigation_item"><a href="#" class="navigation_link">О компании</a></li>
         </ul>
 
-        <ul class="navigation_list navigation_user">
-          <li class="navigation_item"><a href="#" class="navigation_link">+7 800 555-86-28</a></li>
-          <li class="navigation_item"><a href="#" class="navigation_link"><img src="images/поиск.svg" alt="Поиск"><span class="visually_hidden">Поиск</span></a></li>
-          <li class="navigation_item"><a href="#" class="navigation_link"><img src="images/Стрелка.svg" alt="Вход"><span class="visually_hidden">Вход</span></a></li>
-          <li class="navigation_item"><a href="#" class="navigation_link"><img src="images/корзина.svg" alt="Корзина"><span class="visually_hidden"> 2 товара</span></a></li>
-        </ul>
+        <div class="navigation_list navigation_user">
+          <a href="#" class="navigation_link"><b>+7 800 555-86-28</b></a>
+          <button class="navigation_button nav-search" type="button"><img src="images/поиск.svg" alt="Поиск" class="navigation-img"></button>
+          <button class="navigation_button" type="button"><img src="images/Стрелка.svg" alt="Вход" class="navigation-img">Вход</button>
+          <button class="navigation_button nav-basket" type="button"><img src="images/корзина.svg" alt="Корзина" class="navigation-img"></button>
+        </div>
       </nav>
     </header>
 
@@ -43,19 +43,22 @@
 
        <section class="intro">
         <div class="container">
+          <div class="intro-face">
           <div class="intro__inner">
             <div class="intro__text">
               <h1 class="intro__title">
-                Нежный пломбир с клубничным джемом
+                Нежный пломбир <br>с клубничным джемом
               </h1>
               <p class="intro__content">Натуральное мороженое из свежих сливок и молока с вкуснейшим клубничным джемом – это идеальный десерт для всей семьи.</p>
-              <button class="btn">Заказать</button>
+              <button class="intro-btn">Заказать</button>
             </div>
             <div class="intro__img">
               <img src="images/Мороженко_пнг.png" alt="мороженое" class="icecream">
-              <img src="images/Мороженко_пнг3.png" alt="мороженое" class="icecream">
-              <img src="images/Мороженко_2.png" alt="мороженое" class="icecream">
+              <img src="images/Мороженко_пнг3.png" alt="мороженое" class="icecream icecream-small">
+              <img src="images/Мороженко_2.png" alt="мороженое" class="icecream icecream-small">
             </div>
+          </div>
+          </div>
             <div class="icons">
               <ul class="social-icons">
                 <li><a class="social-icon-telegramm" href="#" target="_blank"><img src="images/telegram.svg" alt="Телеграмм" class="telegramm"></a></li>
@@ -63,25 +66,18 @@
                 <li><a class="social-icon-youtube" href="#" target="_blank"><img src="images/youtube(1).svg" alt="Ютуб" class="youtube"></a></li>
               </ul>
             </div>
-            <ol class="slider-pagination">
+            <ul class="slider-pagination">
               <li class="slider-pagination-item">
-                <button class="slider-pagination-button slider-pagination-button-current" type="button">
-                  <span class="visually-hidden">1 фото</span>
-                </button>
+                <button class="slider-pagination-button slider-pagination-button-current" type="button"></button>
               </li>
               <li class="slider-pagination-item">
-                <button class="slider-pagination-button" type="button">
-                  <span class="visually-hidden">2 фото</span>
-                </button>
+                <button class="slider-pagination-button" type="button"></button>
               </li>
               <li class="slider-pagination-item">
-                <button class="slider-pagination-button" type="button">
-                  <span class="visually-hidden">3 фото</span>
-                </button>
+                <button class="slider-pagination-button" type="button"></button>
               </li>
-            </ol>
+            </ul>
           </div>
-        </div>
        </section>
 
        <section class="present-content">
