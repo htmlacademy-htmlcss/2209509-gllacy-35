@@ -1018,7 +1018,7 @@ input[type="search"]::-webkit-search-results-decoration {
   margin-bottom: 70px;
   padding: 64px 64px 64px 100px;
   background-color: var(--background-delivery);
-  background-image: url("../images/news.png");
+  background-image: url("../images/delivery.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   border-radius: 16px;
@@ -1226,12 +1226,14 @@ input[type="search"]::-webkit-search-results-decoration {
   display: none;
 }
 
-.control-input .control::before {
-  fill: #000000;
+.control:focus .filters-icon,
+.control:active .filters-icon {
+  fill: #ffffff;
 }
 
-.control-input .control::after {
-  fill: var(--basic-extra-light);
+.control:focus .filters-icon.filters-icon-checked,
+.control:active .filters-icon.filters-icon-checked {
+  fill: #ffffff;
 }
 
 .control-input:checked ~ .filters-icon:not(.filters-icon-checked) {
