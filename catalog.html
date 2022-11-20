@@ -26,9 +26,6 @@
                 </svg></a>
                 <div class="popover popover-catalog">
                   <h3 class="popover-title">Новинки</h3>
-                  <div class="divider-container">
-                    <div class="divider"></div>
-                  </div>
                   <ul class="reset-list">
                     <li class="text-smaller">
                       <a class="page no-underline" href="catalog.html" tabindex="0">Сливочное</a>
@@ -141,7 +138,7 @@
                         <span class="cart-description">1&nbsp;кг х 310&nbsp;₽</span>
                       </div>
                       <b class="cart-item-price">310&nbsp;₽</b>
-                      <button type="button" class="cross-btn" alt="Удалить"><svg aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 16 16" fill="none"
+                      <button type="button" class="cross-btn" aria-label="Удалить"><svg aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 16 16" fill="none"
                         xmlns="http://www.w3.org/2000/svg">
                         <path fill-rule="evenodd" clip-rule="evenodd"
                           d="M12.803 4.13807C13.0634 3.87772 13.0634 3.45561 12.803 3.19526C12.5427 2.93491 12.1206 2.93491 11.8602 3.19526L7.99914 7.05633L4.13807 3.19526C3.87772 2.93491 3.45561 2.93491 3.19526 3.19526C2.93491 3.45561 2.93491 3.87772 3.19526 4.13807L7.05633 7.99914L3.19526 11.8602C2.93491 12.1206 2.93491 12.5427 3.19526 12.803C3.45561 13.0634 3.87772 13.0634 4.13807 12.803L7.99914 8.94195L11.8602 12.803C12.1206 13.0634 12.5427 13.0634 12.803 12.803C13.0634 12.5427 13.0634 12.1206 12.803 11.8602L8.94195 7.99914L12.803 4.13807Z" />
@@ -155,7 +152,7 @@
                         <span class="cart-description">1,5&nbsp;кг х 320&nbsp;₽</span>
                       </div>
                       <b class="cart-item-price">480 ₽</b>
-                      <button type="button" class="cross-btn" alt="Удалить"><svg aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 16 16" fill="none"
+                      <button type="button" class="cross-btn" aria-label="Удалить"><svg aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 16 16" fill="none"
                         xmlns="http://www.w3.org/2000/svg">
                         <path fill-rule="evenodd" clip-rule="evenodd"
                           d="M12.803 4.13807C13.0634 3.87772 13.0634 3.45561 12.803 3.19526C12.5427 2.93491 12.1206 2.93491 11.8602 3.19526L7.99914 7.05633L4.13807 3.19526C3.87772 2.93491 3.45561 2.93491 3.19526 3.19526C2.93491 3.45561 2.93491 3.87772 3.19526 4.13807L7.05633 7.99914L3.19526 11.8602C2.93491 12.1206 2.93491 12.5427 3.19526 12.803C3.45561 13.0634 3.87772 13.0634 4.13807 12.803L7.99914 8.94195L11.8602 12.803C12.1206 13.0634 12.5427 13.0634 12.803 12.803C13.0634 12.5427 13.0634 12.1206 12.803 11.8602L8.94195 7.99914L12.803 4.13807Z" />
@@ -163,7 +160,6 @@
                     </li>
                   </ul>
 
-                  <div class="divider"></div>
 
                   <div class="cart-actions">
                     <button class="button button-dark cart-button" type="button">
@@ -209,12 +205,10 @@
       <form action="https://echo.htmlacademy.ru/" method="post">
         <div class="filters-group">
           <div class="filters-group-item">
-            <label for="catalog-filter" class="filters-group-label text-smaller">Сортировка:</label>
+            <label for="select-label" class="filters-group-label text-smaller">Сортировка:</label>
 
-            <select class="catalog-filter select-control text-smaller link-button" aria-label="Сортировка">
-              <option value="popular">по популярности <a href="#"><svg width="12" height="6" viewBox="0 0 12 6" class="sort-arrow" xmlns="http://www.w3.org/2000/svg">
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M1.80812 0.195262C1.54777 -0.0650874 1.12566 -0.0650874 0.865306 0.195262C0.604957 0.455612 0.604957 0.877722 0.865306 1.13807L5.52565 5.79842C5.52771 5.80053 5.52979 5.80264 5.53189 5.80474C5.66259 5.93543 5.83404 6.00052 6.00534 6C6.1753 5.9995 6.34511 5.93441 6.47478 5.80474C6.47687 5.80265 6.47894 5.80056 6.48099 5.79845L11.1414 1.13807C11.4017 0.877722 11.4017 0.455612 11.1414 0.195262C10.881 -0.0650874 10.4589 -0.0650874 10.1986 0.195262L6.00334 4.39048L1.80812 0.195262Z" fill="#2D3440"/>
-                </svg></a></option>
+            <select class="catalog-filter select-control text-smaller link-button" id="select-label" aria-label="Сортировка">
+              <option value="popular">по популярности</option>
               <option value="cheap">по возрастанию цены</option>
               <option value="expensive">по убыванию цены</option>
               <option value="rating">по рейтингу</option>
@@ -241,7 +235,7 @@
             <span class="filters-group-label text-smaller">Жирность:</span>
             <ul class="fatness-filter-list link-button reset-list">
               <li class="fatness-filter-item">
-                <label class="control text-smaller"tabindex="0">
+                <label class="control text-smaller" tabindex="0">
                   <input class="control-input" type="radio" name="product-group" value="before-ziro-percent">
                   <svg class="filters-icon filters-icon-checked" aria-hidden="true" focusable="false" width="16"
                        height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -612,7 +606,7 @@
         </li>
         <li class="offers-item">
           <a class="no-underline offers-link" href="#" tabindex="0">
-            <img class="offers-image" src="images/blueberry.png" width="168" height="168"
+            <img class="offers-image" src="images/Creme-brulee.png" width="168" height="168"
                  alt="Ванильное мороженое с посыпкой.">
             <h3 class="heading-h4">Крем-брюле</h3>
             <p class="offers-description text-color-secondary text-align-center">Классическое крем-брюле</p></a>
@@ -735,7 +729,7 @@
     <section class="copyright">
       <h3 class="visually-hidden">Копирайт.</h3>
       <a class="htmlacademy-link no-underline" href="https://htmlacademy.ru/" tabindex="0">
-        <img src="images/logo_htmlacademy.svg" width="93" height="27" alt="Логотип HTML-Academy."></a>
+        <img src="images/logo-htmlacademy.svg" width="93" height="27" alt="Логотип HTML-Academy."></a>
       <p class="copyright-info">Сделано в <a class="htmlacademy-link" href="https://htmlacademy.ru/" tabindex="0">.html
         academy</a>
         &copy; 2021</p>
