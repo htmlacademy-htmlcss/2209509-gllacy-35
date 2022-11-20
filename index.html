@@ -4,7 +4,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Глейси</title>
-    <link rel="icon" href="images/favicon.svg" type="image/x-icon">
+    <link rel="icon" href="favicon.svg" sizes="32x32" type="image/x-icon">
     <link rel="stylesheet" href="css/style.css">
   <body>
     <div class="container">
@@ -26,9 +26,6 @@
                 </svg></a>
               <div class="popover popover-catalog">
                 <h3 class="popover-title">Новинки</h3>
-                <div class="divider-container">
-                  <div class="divider"></div>
-                </div>
                 <ul class="reset-list">
                   <li class="text-smaller">
                     <a class="page no-underline" href="catalog.html" tabindex="0">Сливочное</a>
@@ -141,7 +138,7 @@
                       <span class="cart-description">1&nbsp;кг х 310&nbsp;₽</span>
                     </div>
                     <b class="cart-item-price">310&nbsp;₽</b>
-                    <button type="button" class="cross-btn" alt="Удалить"><svg aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 16 16" fill="none"
+                    <button type="button" class="cross-btn" aria-label="Удалить"><svg aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 16 16" fill="none"
                       xmlns="http://www.w3.org/2000/svg">
                       <path fill-rule="evenodd" clip-rule="evenodd"
                         d="M12.803 4.13807C13.0634 3.87772 13.0634 3.45561 12.803 3.19526C12.5427 2.93491 12.1206 2.93491 11.8602 3.19526L7.99914 7.05633L4.13807 3.19526C3.87772 2.93491 3.45561 2.93491 3.19526 3.19526C2.93491 3.45561 2.93491 3.87772 3.19526 4.13807L7.05633 7.99914L3.19526 11.8602C2.93491 12.1206 2.93491 12.5427 3.19526 12.803C3.45561 13.0634 3.87772 13.0634 4.13807 12.803L7.99914 8.94195L11.8602 12.803C12.1206 13.0634 12.5427 13.0634 12.803 12.803C13.0634 12.5427 13.0634 12.1206 12.803 11.8602L8.94195 7.99914L12.803 4.13807Z" />
@@ -155,7 +152,7 @@
                       <span class="cart-description">1,5&nbsp;кг х 320&nbsp;₽</span>
                     </div>
                     <b class="cart-item-price">480 ₽</b>
-                    <button type="button" class="cross-btn" alt="Удалить"><svg aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 16 16" fill="none"
+                    <button type="button" class="cross-btn" aria-label="Удалить"><svg aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 16 16" fill="none"
                       xmlns="http://www.w3.org/2000/svg">
                       <path fill-rule="evenodd" clip-rule="evenodd"
                         d="M12.803 4.13807C13.0634 3.87772 13.0634 3.45561 12.803 3.19526C12.5427 2.93491 12.1206 2.93491 11.8602 3.19526L7.99914 7.05633L4.13807 3.19526C3.87772 2.93491 3.45561 2.93491 3.19526 3.19526C2.93491 3.45561 2.93491 3.87772 3.19526 4.13807L7.05633 7.99914L3.19526 11.8602C2.93491 12.1206 2.93491 12.5427 3.19526 12.803C3.45561 13.0634 3.87772 13.0634 4.13807 12.803L7.99914 8.94195L11.8602 12.803C12.1206 13.0634 12.5427 13.0634 12.803 12.803C13.0634 12.5427 13.0634 12.1206 12.803 11.8602L8.94195 7.99914L12.803 4.13807Z" />
@@ -181,7 +178,7 @@
 
       <main class="main">
         <section class="intro">
-          <div class="intro-container">
+          <div class="intro-container active">
             <h2 class="heading-h1 intro-title">
               Нежный пломбир с&nbsp;клубничным джемом
             </h2>
@@ -214,7 +211,8 @@
           </div>
 
           <ol class="slider-pagination-list reset-list">
-            <li class="slider-pagination-item slider-pagination-item-current">
+          <!--Слайды изменяются засчёт добавления и удаления клаccа active-->
+            <li class="slider-pagination-item active">
               <button class="slider-button slider-preview button" type="button">
                 <svg aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 16 16" fill="none"
                   xmlns="http://www.w3.org/2000/svg">
@@ -225,7 +223,7 @@
               </button>
 
               <div class="slider-pagination-button">
-                <img src="images/stroberry-icecream.png" width="306" height="501" alt="Мороженое с клубничным джемом.">
+                <img src="images/stroberry-icecream.png" class="slider-pagination-img"  width="306" height="501" alt="Мороженое с клубничным джемом.">
                 <span class="visually-hidden">Клубничное мороженое.</span>
               </div>
 
@@ -237,22 +235,50 @@
                 </svg>
                 <span class="visually-hidden">Следующее фото.</span>
               </button>
-              <div class="pagination-item-underlay"></div>
             </li>
             <li class="slider-pagination-item">
+              <button class="slider-button slider-preview button" type="button">
+                <svg aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 16 16" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M9.8033 3.80515C10.063 3.54545 10.063 3.12439 9.8033 2.8647C9.54361 2.605 9.12255 2.605 8.86285 2.8647L4.19477 7.53277C3.93593 7.79162 3.93508 8.21075 4.19221 8.47065C4.19338 8.47183 4.19454 8.47301 4.19572 8.47418L8.8638 13.1423C9.12349 13.402 9.54455 13.402 9.80425 13.1423C10.0639 12.8826 10.0639 12.4615 9.80425 12.2018L5.60545 8.00301L9.8033 3.80515Z" />
+                </svg>
+                <span class="visually-hidden">Предыдущее фото.</span>
+              </button>
               <button class="slider-pagination-button" type="button">
-                <img src="images/banana-icecream.png" width="100" height="147" alt="Мороженое со вкусом банана.">
+                <img src="images/banana-icecream.png" class="slider-pagination-img" width="100" height="147" alt="Мороженое со вкусом банана.">
                 <span class="visually-hidden">Банановое мороженое.</span>
               </button>
-              <div class="pagination-item-underlay"></div>
+              <button class="slider-button slider-next button" type="button">
+                <svg aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 16 16" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M7.13526 2.8647C6.87557 2.605 6.45451 2.605 6.19481 2.8647C5.93511 3.12439 5.93511 3.54545 6.19481 3.80515L10.3961 8.00643L6.19477 12.2077C5.93508 12.4674 5.93508 12.8885 6.19477 13.1482C6.45447 13.4079 6.87553 13.4079 7.13523 13.1482L11.804 8.47944C11.8049 8.47852 11.8058 8.47759 11.8068 8.47666C12.0665 8.21696 12.0665 7.79591 11.8068 7.53621L7.13526 2.8647Z" />
+                </svg>
+                <span class="visually-hidden">Следующее фото.</span>
+              </button>
             </li>
             <li class="slider-pagination-item">
+              <button class="slider-button slider-preview button" type="button">
+                <svg aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 16 16" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M9.8033 3.80515C10.063 3.54545 10.063 3.12439 9.8033 2.8647C9.54361 2.605 9.12255 2.605 8.86285 2.8647L4.19477 7.53277C3.93593 7.79162 3.93508 8.21075 4.19221 8.47065C4.19338 8.47183 4.19454 8.47301 4.19572 8.47418L8.8638 13.1423C9.12349 13.402 9.54455 13.402 9.80425 13.1423C10.0639 12.8826 10.0639 12.4615 9.80425 12.2018L5.60545 8.00301L9.8033 3.80515Z" />
+                </svg>
+                <span class="visually-hidden">Предыдущее фото.</span>
+              </button>
               <button class="slider-pagination-button" type="button">
-                <img src="images/caramell-icecrem.png" width="100" height="147" alt="Мороженое с карамелью и маршмеллоу.">
+                <img src="images/caramell-icecrem.png" class="slider-pagination-img"  width="100" height="147" alt="Мороженое с карамелью и маршмеллоу.">
                 <span class="visually-hidden">Карамельное мороженое.</span>
               </button>
-
-              <div class="pagination-item-underlay"></div>
+              <button class="slider-button slider-next button" type="button">
+                <svg aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 16 16" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M7.13526 2.8647C6.87557 2.605 6.45451 2.605 6.19481 2.8647C5.93511 3.12439 5.93511 3.54545 6.19481 3.80515L10.3961 8.00643L6.19477 12.2077C5.93508 12.4674 5.93508 12.8885 6.19477 13.1482C6.45447 13.4079 6.87553 13.4079 7.13523 13.1482L11.804 8.47944C11.8049 8.47852 11.8058 8.47759 11.8068 8.47666C12.0665 8.21696 12.0665 7.79591 11.8068 7.53621L7.13526 2.8647Z" />
+                </svg>
+                <span class="visually-hidden">Следующее фото.</span>
+              </button>
             </li>
           </ol>
 
@@ -268,14 +294,14 @@
                   <span class="visually-hidden">Банановое мороженое.</span>
                 </button>
               </li>
-              <li class="slider-pagination-bullet" type="button">
-                <button class="bullet">
+              <li class="slider-pagination-bullet">
+                <button class="bullet" type="button">
                   <span class="visually-hidden">Карамельное мороженое.</span>
                 </button>
               </li>
             </ol>
 
-            <ul class="social reset-list">
+            <ul class="social reset-list page-social">
               <li class="social-item">
                 <a class="social-link no-underline" href="https://t.me/htmlacademy" tabindex="0">
                   <svg aria-hidden="true" focusable="false" width="24" height="24" viewBox="0 0 24 24" fill="none"
@@ -349,7 +375,6 @@
                   </svg>
                   <span class="visually-hidden">Добавить в корзину.</span></a>
               </div>
-              <div class="offers-underlay"></div>
             </li>
             <li class="offers-item">
               <a class="no-underline offers-link" href="#" tabindex="0">
@@ -566,13 +591,12 @@
           <a href="#feedback" class="popup-area"></a>
           <div class="popup-body">
             <div class="popup-content">
-              <a href="#feedback" class="popup-close">
-                <button type="button" class="cross-btn" alt="Закрыть"><svg width="14" height="14" viewBox="0 0 14 14" fill="none"
+                <button type="button" class="cross-btn" aria-label="Закрыть"><svg width="14" height="14" viewBox="0 0 14 14" fill="none"
                   xmlns="http://www.w3.org/2000/svg">
                   <path fill-rule="evenodd" clip-rule="evenodd"
                     d="M12.8858 2.05482C13.1461 1.79447 13.1461 1.37236 12.8858 1.11201C12.6254 0.851661 12.2033 0.851661 11.943 1.11201L6.99877 6.0562L2.05458 1.11201C1.79423 0.851661 1.37212 0.851661 1.11177 1.11201C0.851417 1.37236 0.851417 1.79447 1.11177 2.05482L6.05596 6.99901L1.11177 11.9432C0.851417 12.2036 0.851417 12.6257 1.11177 12.886C1.37212 13.1464 1.79423 13.1464 2.05458 12.886L6.99877 7.94182L11.943 12.886C12.2033 13.1464 12.6254 13.1464 12.8858 12.886C13.1461 12.6257 13.1461 12.2036 12.8858 11.9432L7.94158 6.99901L12.8858 2.05482Z"
                     fill="#2D3440" />
-                </svg></button></a>
+                </svg></button>
               <h3 class="popup-title heading-h3">Мы обязательно ответим вам!</h3>
               <form action="https://echo.htmlacademy.ru/" method="post">
                 <fieldset class="modal-form">
@@ -661,7 +685,7 @@
         <section class="copyright">
           <h3 class="visually-hidden">Копирайт.</h3>
           <a class="htmlacademy-link no-underline" href="https://htmlacademy.ru/">
-            <img src="images/logo_htmlacademy.svg" width="93" height="27" alt="Логотип HTML-Academy."></a>
+            <img src="images/logo-htmlacademy.svg" width="93" height="27" alt="Логотип HTML-Academy."></a>
           <p class="copyright-info">Сделано в <a class="htmlacademy-link" href="https://htmlacademy.ru/"
               tabindex="0">.html
               academy</a>
@@ -670,5 +694,4 @@
       </footer>
     </div>
   </body>
-
 </html>
